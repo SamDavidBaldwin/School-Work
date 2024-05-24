@@ -1,0 +1,12 @@
+1) allocator_init(size_t size), takes a size parameter, and creates two dlists, the first representing the free space left in the allocator, and the second representing the allocated list. It creates a space in memory using malloc() of the size argument, and sets that as the first node in the free list to represent the empty space in memory.
+
+2)allocate(int type, size_t size), takes a size parameter of the size of a node to allocate, and type represents the type of allocation, with 0 being first fit, 1 being worst fit, and 2 being best fit. The location of where the node of size of the provided parameter is stored is returned.
+
+3)best_allocate(size_t size), takes a size parameter of the size of a node to allocate. It creates an iterator which traverses the free list via the ->next pointers within each of the nodes of the free list, and looks for a space that is large enough to store it. As the iterator traverses, it finds the smallest possible space of it to fit, and returns that location as a node. If there is a fragmentation, it stores across nodes by taking the remaining size in one node and allocates
+the remaining amount in the consecutive node.
+
+4)worst_allocate(size_t size), takes a size parameter of the size of a node to allocate. Like best_allocate(), it creates an iterator  but instead of looking for the smallest possible space, it looks for the largest possible space. It then allocates into that location. The process for handling fragmentation is exactly the same as above.
+
+5)first_allocate(size_t size), takes a size parameter of the size of a node to allocate. Like the two previous functions it creates an iterator and iterates until it finds the first possible space for the created node to fit. The process for handling fragmentation is exactly the same as above.
+
+6)deallocate(void *ptr) takes a pointer argument of a node to deallocate in memory. It searches through the allocated list for the location of that pointer, and if that pointer exists, removes it from the allocated and adds it to the free list. Otherwise it returns -1.

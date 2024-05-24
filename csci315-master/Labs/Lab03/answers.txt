@@ -1,0 +1,26 @@
+1.1).
+/tmp/ccFRFw2t.o: In function `SumExp':
+summation.c:(.text+0x74): undefined reference to `pow'
+/tmp/ccFRFw2t.o: In function `main':
+summation.c:(.text+0x314): undefined reference to `pthread_create'
+summation.c:(.text+0x39c): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+
+1.2).
+  -lm
+1.3)
+After adding the -lm flag
+/tmp/ccXFNM4r.o: In function `main':
+summation.c:(.text+0x314): undefined reference to `pthread_create'
+summation.c:(.text+0x39c): undefined reference to `pthread_join'
+This is fixed with the -lpthread
+
+2.1). In the main execution of the program there is a loop that iterates through each of the threads that are created, and puts the information into the struct that each thread executes off of.
+2.2). Calloc is similar to malloc in that it allocates a space in memory and returns a pointer to that space. The difference between that two is that after allocation, calloc sets the spaces that are allocated to zero while malloc doesn't. Give that calloc is being called on an array, it would make sense to set it to zeroes so accessing/comparing within the array is easier.
+2.3). When a thread is detached the tid and resources can be used by other processes right after the thread is terminated. If the program is aiming to have the threads pass on information, and then have no function after, having them be detached would be better for performance and memory utilization.
+2.4). The main thread waits for the spawned threads to terminate, and after they terminate, iterates through the list, and joins each of the child threads, and checks the return status of the threads. This communicates the value.
+2.5).If you have one of the threads exit while it is completing, the entire program fails, and does not print anything.
+2.6).If you have one of the threads call execl once it reaches that thread, the thread calls execl and the program exits.
+
+4.1). Given that threads execute relatively arbitrarily, we cannot guarantee that the date printed is the exact date at which that exact thread was terminated especially because ctime isn't thread-safe.
+4.2) If we use the thread-safe ctime_r, we can be more sure that the date printed is accurate.

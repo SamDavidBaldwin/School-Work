@@ -1,0 +1,44 @@
+------------------------------------------------------------
+Lab 1 -- 100/100, good job!
+------------------------------------------------------------
+
+Prelab: 30/30
+
+  Problem 1 - cmds.c: [10/10]
+    a) Check 4 parameters are given: 3/3
+    b) Assign parameters to variables: 4/4
+    c) Print values of variables to terminal: 3/3
+
+  Problem 2 - cmdreverse.c: [10/10]
+    a) Check 1 parameter is given: 3/3
+    b) Reverse given string: 4/4
+    c) Print reversed string to terminal: 3/3
+
+  Problem 3 - myprog.c: [10/10]
+    a) Parent process works correctly: 5/5
+    b) Children processes work correctly: 5/5
+
+Lab: 70/70
+
+  Problem 0: [5/5]
+	Make works correctly on all files: 5/5
+
+  Problem 1: [20/20]
+	a) Both parent and child prints pid (fork.c): 5/5
+	b) See answer.txt, should be 2 instances: 5/5
+	c) Parent terminates after child (fork-wait.c): 5/5;
+	d) child prints getpid() and getppid(): 5/5
+
+  Problem 2: [25/25]
+	a) See answer.txt, should be i, x in data, pid, j, y on stack: 4/4
+	b) See answer.txt, should be both are copied over, parent and child have separate segments: 5/5
+	c) fork-file.c works as expected: 6/6
+	d) See answer.txt, when one process closes the file, the other can still read: 3/3;
+	e) child and parent read from same fd: 3/3
+	f) Wrapper Fork function created correctly: 4/4
+
+  Problem 3: [20/20]
+	a) catcount.c works correctly: 10/10
+	b) print_environment works correctly: 10/10
+
+

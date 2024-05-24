@@ -1,0 +1,31 @@
+/* *****************************************
+*CSCI205 -Software Engineering and Design
+* Fall 2021
+* Instructor: Brian R. King
+* Section: MWF 1 - 8:30am
+*
+* Name: Samuel Baldwin
+* Date: 9/3/2021
+*
+* Lab / Assignment: Lab01
+*
+* Description:
+*
+* *****************************************/
+
+2.1)
+
+Primitive:
+Answer = 49999995000000. Time = 5561916 ns
+Wrapped:
+Answer = 49999995000000. Time = 97788689 ns
+Primitive types used 17.6% of the time of the wrapper objects
+
+2.2)
+
+I think the difference between using primitive and wrapped types comes from the
+fact that primitive types are more simplistic and easier for the computer to
+handle, and as such, with a large amount of operations takes less time than the
+more complex wrapped types. Utilizing objects for large numbers of operations
+even simple ones, requires a large amount of created objects and by extension
+time.

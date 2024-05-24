@@ -1,0 +1,27 @@
+Problem 1):
+    1).Pipe Similarities:
+        Error value of -1
+        Based off of a similar structure of reads and writes
+       Open similarites:
+        error value of -1
+        imported in same library
+        return a file descriptor
+       Pipe Differences:
+        Imported with different libraries
+        The value of the file descriptor for socket is returned, and pipe returns 0
+        Pipe is unidirectional socket is bidirectional
+       Open Differences:
+        Open is used to open files to be read
+        Open requires a modifier to determine what kind of access
+        Socket creates 2 endpoints of communication
+Problem 2):
+    1). At the start, both programs establish sockets with the same parameters, and the server establishes a port number for the client to connect to. The server, then waits for a connection from the client by looking for incoming requests on the established port in an infinite loop using listen() and waiting for an accept(). When the client is started, it is given a port to connect to over the internet, and then using connect() the client is able to access that port number, and
+    communicate.
+    2). The purpose of bind() is to connect a socket that has been created but has no address assigned to it, to a specific address specified by addr.
+    3). The purpose of connect() is to connect the specific socket that is refered to by the provided parameters, to the specific address that is also provided by the parameters.
+    4). The purpose of the listen() call is to mark the specific socket that is provided by the parameters of the call as a passive socket, meaning it will be used to accept incoming requests.
+    5). The purpose of accept is to recieve the first connection request that is within the queue of pending connections for the specific socket that is listening for a connection, after calling listen(). It then creates a new connected socket, and returns the specific file descriptor that refers to that newly created socket.
+    6). Functionally, much of the design around sending and recieving messages will be remarkably similar to the work that we previously did with establishing pipes. Regardless of what specific mechanism that we will use to actually accomplish the communication it will be fundamentally based on the very simple read and write calls. In this case, the specific calls that we will be making in the two programs specified will be a series of send and recieve calls structured around a process of
+    establishing, binding, listening, connecting two sockets that are established to communicate between the two services the data that will be changing hands.
+
+

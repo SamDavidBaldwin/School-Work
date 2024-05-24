@@ -1,0 +1,16 @@
+Instructions
+
+The actual test folder is just the BoardSystem.java, running that file's main program will initialize a game instance that
+can be played through to completion.
+The game works on typing in colors in 4 color sequences as codes to try to guess a "master code"
+At the start of the game, the user is asked how many guesses they would like the game to allow, and takes an integer
+value. If the user enters a number less than 1, the number of guesses will default to 0. The default number of guesses
+is 10.
+After determining the number of guesses, the user is asked whether they would like a random code to be generated for
+them, or if they would like to manually provide a code. If the user wants to cheat, the lines 83 and 88 can be
+uncommented in the Mastermind.java file to reveal the code. (This would be something that I would make an option if I
+spent more time).
+The user is then asked to type in 4 colors, one at a time to formulate a guess at the "master code". After each guess,
+the board (Array), is updated, and two numbers are provided to the user. The number of Correct Positions gives the user
+the number of times they correctly guessed both the position and color of an object in the "master code". The number of
+Correct Colors gives the number of times that the user guessed the correct color in the wrong position of the code.

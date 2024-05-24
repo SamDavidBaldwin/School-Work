@@ -1,0 +1,9 @@
+strcpy(3) - This function copies a string pointed to by a source and copies it to a destination specified in the function call. There are some limitations in using this function, as the strings that are copied may not overlap, and the destination must be large enough to recieve the copy.
+
+strncpy(3) - Similar to strcpy() this copies a string, but allows more specificity in the way that it is copied. Rather than only taking a cource and a destination, strncpy takes a third argument n, which denotes the number bytes of the source are copied. This function also comes with some limitations, as if there isss no null byte among the bytes copied, the string copied into the destination will also not be null-terminated.
+
+strcmp(3) - This function takes two strings as arguements and compares the two strings together. The return value of the function is an integer, and returns less than 0 if s1 is lesser than s2, 0 if they are equal, and greater than 0 if s1 is greater than s2.
+
+strncmp(3)- Similar to strcmp() this takes two strings as arguements but also takes a third input n, which denotes the number of bytes of s1 and s2 that are to be compared.
+
+strlen(3)- Takes an input of an array of characters s that represent a string and returns the length of the string. This returned value does not include the null terminating byte.

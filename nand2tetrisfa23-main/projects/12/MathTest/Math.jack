@@ -1,0 +1,140 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Math.jack
+
+/**
+ * A library of commonly used mathematical functions.
+ * Note: Jack compilers implement multiplication and division using OS method calls.
+ */
+class Math {
+    static Array twoPow; 
+    /** Initializes the library. */
+    function void init() {
+        let twoPow = Array.new(16);
+		let twoPow[0] = 1;
+		let twoPow[1] = 2;
+		let twoPow[2] = 4;
+		let twoPow[3] = 8;
+		let twoPow[4] = 16;
+		let twoPow[5] = 32;
+		let twoPow[6] = 64;
+		let twoPow[7] = 128;
+		let twoPow[8] = 256;
+		let twoPow[9] = 512;
+		let twoPow[10] = 1024;
+		let twoPow[11] = 2048;
+		let twoPow[12] = 4096;
+		let twoPow[13] = 8192;
+		let twoPow[14] = 16384;
+		let twoPow[15] = 16384 + 16384;
+        return;
+    }
+
+    /** Returns the absolute value of x. */
+    function int abs(int x) {
+       if( x < 0){
+        return -x;
+       }
+       return x;
+    }
+
+
+    /** Returns the product of x and y. 
+     *  When a Jack compiler detects the multiplication operator '*' in the 
+     *  program's code, it handles it by invoking this method. In other words,
+     *  the Jack expressions x*y and multiply(x,y) return the same value.
+     */
+    function int multiply(int x, int y) {
+        var int sum;
+        var int shift;
+        var int i;
+		let sum = 0;
+		let shift = x;
+		let i = 0;
+
+		if (x < 0){
+      		return -Math.multiply(-x, y);
+    	}
+
+   		if (y < 0){
+      		return -Math.multiply(x, -y);
+    	}
+		while(i<16){
+			if(twoPow[i] & y){
+				let sum = sum+shift;
+			}
+			let shift = shift+shift;
+			let i = i+1;
+		}
+		return sum;
+    }
+
+    /** Returns the integer part of x/y.
+     *  When a Jack compiler detects the multiplication operator '/' in the 
+     *  program's code, it handles it by invoking this method. In other words,
+     *  the Jack expressions x/y and divide(x,y) return the same value.
+     */
+    function int divide(int x, int y) {
+		var int q; 
+
+		if (x < 0) {
+			return -Math.divide(-x, y);
+		}
+
+		if (y < 0) {
+			return -Math.divide(x, -y);
+			}
+
+		if (y > x) {
+				return 0;
+		}
+
+		let q = Math.divide(x, y + y);
+
+		if ((x - (2 * q * y)) < y) {
+			return q + q;
+		} else {
+			return q + q + 1;
+		}
+	}
+
+
+    /** Returns the integer part of the square root of x. */
+    function int sqrt(int x) {
+        var int y, j, yp2j, yp2j2;
+		let y = 0;
+		let j = 7;
+		while(j > -1)
+		{
+			let yp2j = y+twoPow[j];
+			let yp2j2 = yp2j*yp2j;
+			if(~(yp2j2>x) & (yp2j2>0)) // check for overflow
+			{
+				let y = yp2j;
+			}
+			let j = j-1;
+		}
+		return y;
+    }
+
+
+    /** Returns the greater number. */
+    function int max(int a, int b) {
+        	if(a > b)
+		{
+			return a;
+		}
+		return b;
+    }
+
+    /** Returns the smaller number. */
+    function int min(int a, int b) {
+        if(a<b)
+		{
+			return a;
+		}
+		return b;
+    }
+    
+}

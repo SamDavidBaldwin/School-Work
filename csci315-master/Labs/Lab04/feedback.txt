@@ -1,0 +1,37 @@
+------------------------------
+Lab 4 - 97/100
+------------------------------
+
+Prelab: [30/30]
+    	[5/5] Read the manual page for the socket(2) call. Compare this call to pipe(2) and open(2); explain the similarities and the differences you observe.
+    	[4/4] Explain how one program addresses the other program for communication over a TCP socket.
+    	[4/4] Explain the purpose of the bind(2) call. 
+    	[4/4] Explain the purpose of the connect(2) call. 
+    	[4/4] Explain the purpose of the listen(2) call. 
+    	[4/4] Explain the purpose of the accept(2) call. 
+    	[5/5] Explain how you will be able to send and to receive messages.
+
+Lab: [67/70]
+    Problem 1 [10/10]
+        [6/6] Implement wrappers correctly for the “new” system calls, connect, bind, listen, and accept;
+        [4/4] Implement wrappers correctly for old functions.
+
+    Problem 2 [22/25]
+        [5/5] Use the wrapper functions you implemented in echoreq.c and echod.c;
+        [12/15] Implement the communications between echoreq and echod correctly
+;
+		- extra junk characters being added
+        [5/5] Correctly remove extra blank spaces in the message.
+
+    Problem 3 [20/20]
+        4 points for each of the answers in answers.txt.
+
+    Problem 4 [15/15]
+        [10/10] Use the correct name resolution function other than gethostbyname();
+        [5/5] Correctly implement echoreq2.c using the above found name resolution function.
+
+    Note: [up to -10 points] An incorrect or incomplete Makefile to build all programs in the lab assignment.
+
+
+
+

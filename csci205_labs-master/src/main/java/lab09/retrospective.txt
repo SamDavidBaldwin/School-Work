@@ -1,0 +1,12 @@
+The sprint was something that while I hadn't done it before, I found pretty helpful when coding, just in the sense that
+it kept me on track with what I needed to be doing, and provided a logical sequence for me to follow when completing a
+task. In the process of using it, I accomplished just about what I expected to, with some tasks taking a little longer
+than I expected, and some tasks taking a little shorter than I expected. I generally had a decent ballpark idea of how
+long a task would take, but as was expected I ran into a couple catch points on some of them. I think in general, the
+coding quality was pretty decent, but if I went through another sprint, there would be a number of changes that I would
+make to clean up the code a lot. I would probably first clean up some logic, because I am sure there are a
+number of mistakes or redundancies in my logic, and I would also make the system of displaying the game in progress
+better. I would also remake the tests that I used. As the code got more complex, the original tests that I wrote got
+phased out because they were based on the old way that I wrote the program, and as such were out of date and didn't work
+properly. I would strengthen those tests, and update them to the existing code in order to have a more effective way to
+test if my code was working.

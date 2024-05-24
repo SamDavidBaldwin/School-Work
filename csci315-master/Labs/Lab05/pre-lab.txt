@@ -1,0 +1,10 @@
+2.1) The difference between a mutex and a semaphore is within the exact function that they serve, where a mutex is a locking mechanism that prevents access to a resource on a given condition  a semaphore is a signalling mechanism that denotes when something is or isn't accessable.
+
+2.2)
+    1.pthread_mutex_init destroys and intializes a new mutex, at a given default value given a specific attribute by the second parameters.
+    2.pthred_mutex_lock the mutex object on which this method call is made will be locked and will return 0 or EOWNERDEAD. If a thread tries toacces this mutex to relock, it will remain locked until the thread that specifically locked the mutex tries to unlock.
+    3.pthread_mutex_unlock will unlock a locked mutex in the case where the thread that is making the unlock call is the same thread that was the one that locked the mutex initially. This allows access to the mutex object by other processes.
+    4.sem_init initializes an unnamed semaphore at the provided address point, with the provided initial values, with a number of modifications, as to whether the semaphore is to be shared.
+    5.sem_wait sets the semaphore that is specified in the function call to wait as it locks the semaphore. This then allows for, if the value of the semaphore is greater than 0, to be decremented. If at the point of the call, the semaphore has the value of 0, it waits until this is no longer true.
+    6.sem_post unlocks a specified semaphore. After the call, if the value of the semaphore becomes greater than 0, it can be modified and locked by another thread.
+

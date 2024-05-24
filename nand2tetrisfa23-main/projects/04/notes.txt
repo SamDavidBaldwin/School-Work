@@ -1,0 +1,28 @@
+Theory of Universality came from Turing, and was put into practice by von Neumann
+Programs in a high level language are compiled and translate into machine language, which is then interpreted by the CPU
+The mnemonic form of the binary bits for an instruction are called assembly language 
+    Assembly language will have an assembler that converts it to bit form 
+
+Machine language oerations fall under specific groups
+    Arithmetic, Logical and Flow operations
+
+Machine languages differ in the total number of operations as well as different data types
+
+Memory Hierarchy
+Instead of one large memory pool, have scaled smaller and smaller but faster and faster memory in order to avoid issues of time accessing memory
+
+Drivers for utilizing input devices like mice are within the CPU
+A register is used to take input from these devices
+
+In this language you can only compare to 0
+    All branches are (if the value of this computation compared to zero)
+
+
+The abstraction of the screen is just an array of binary (pixels) to represent na image 
+There is a builtin chip which is just an 8k array called screen
+Keyboard is stored as a keyboard chip which has an associated binary value to each of the values possible 
+
+The Hack language has A instructions which are value or C instruction which are control 
+
+Hack is case sensitive
+

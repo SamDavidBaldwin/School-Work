@@ -1,0 +1,1 @@
+2). rand_r is thread safe, as there is no explicit access to a specific location in memory each time that the function is called in order to access or store a value. This results in there not being access conflicts or race conditions, where a function that doesn't specifically take a parameter may run into issues pertaining to accessing locations in memory.

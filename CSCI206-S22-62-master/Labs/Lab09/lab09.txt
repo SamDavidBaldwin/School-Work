@@ -1,0 +1,26 @@
+<Samuel Baldwin>
+<Lab 62>
+<3/29/22>
+
+(4.1) What do you observe when the block size is increased from 8 to 64 for an 8K direct-mapped cache? What principle of cache operation is responsible for this effect?
+As the block size is increased, the number of misses, and as a result, the overall missrate decreases. This is a result of the fact that while the block size increases, the cache exploits spatial locality to accomplish the task of checking misses and hits.
+(4.2) What do you observe when you double the size of the direct-mapped cache (from 8K to 16K) while keeping the block size at 8? Discuss these results relative to your results from question 1. Is a bigger cache necessarily better?
+As the Cache size doubled, the miss rate decreased, but not significantly so. Generally, increasing the block size had a markedly larger effect on the reduction of misses than the increasing of the cache size. While a larger cache can certainly help reduce misses, it is not perfect, and is not entirely computationally efficient.
+(4.3) What is the performance of a direct-mapped cache with sizes 32K, 64K, 128K, 256K, and 512K using a block size of 32? Is there a significant impact on the miss rate?
+There really is not a significant influence on the miss rate, because from 16-32k the change is less than .0003, from 32-64k the change is less than .00004, from 64-128k the change is less than .00002, and after this point the change is basically linear.
+(4.4) What is the effect of setting 2-way and 4-way set associativity for an 8K cache with a block size of 8? Is this what you expected? Explain your findings.
+As the associativity increases, the number of misses and as a result, the miss rate doubles. This is likely a result of the behavior of the associative cache algorithm which iterates through the entire assicative array, when examining the cache.
+(4.5) What is the effect of setting 2-way and 4-way set associativity for a 128K cache with a block size of 8? Compare them to previous results and explain your findings.
+There is fundamentally very little difference between the results of the two simulations. This is likely a result of the fact that we have reached a critical point where the size of the cache, coupled with the associativity has reached a relative point where the entirety of the data set can be effectively stored.
+
+
+
+(Ex6)
+cache_sim (cache_size) (block_size) (associativity) *FILE ->/tmp/$USER-naive-8.log and /tmp/$USER-blocked-8.log
+Through examination of different cache sizes, block sizes, and associativities, the initial idea was to examine a subset of smaller caches and iterate different block sizes and associativities, and see if it was possible to draw conclusions. The initial idea was to examine small caches with between 8 and 32 block sizes, and different associativites between 1 and 4. Through this examination, we found that a larger block size was the most influential on the miss rate, and as such
+decided to focus on the block size as a parameter. We then started to examine the relative efficiency of larger caches on the miss rate, with an emphasis on larger block sizes. Through this examination, we found that there was little influence on the relative efficiency. Given the goal, we decided that in order to maximixe the efficiency of the cache, while keeping the relative sie of the cache small, we settled on a cache size of 128, a block size of 32 and an associativity of 1,  which
+ultimately had a miss rate of roughly .03%. THis was among the most efficient of the multiple caches that we tested, as well as being incredibly small compared to a number of the other caches that we tested.
+When compared to the naive, we find that this level of efficiency can only be found in purely idealized and incredibly inefficient systems, representing the fact that utilizing a blocking system that is efficient greatly influences the effective value of the cache.
+
+
+

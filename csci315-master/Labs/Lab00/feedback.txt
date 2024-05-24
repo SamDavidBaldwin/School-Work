@@ -1,0 +1,20 @@
+----------------------------
+Lab 0 - 99/100
+----------------------------
+
+Prelab: [29/30]
+	Problem 1 [5/5] 
+		Assigned for completion.
+	Problem 2 [15/15]
+		Assigned according to the quiz results.
+	Problem 3 [9/10]
+		Assigned according to the quiz results.
+
+
+Lab: [70/70]
+	Problem 1 [40/40]
+		[40 points] for a Makefile that compiles dnode.o, dlist.o, and dlisttest.c.
+	Problem 2 [30/30]
+		[10 points] for the correct implementation of dlist_add_front.
+		[10 points] for the correct implementation of dlist_add_back.
+		[10 points] for the correct implementation of dlist_remove_front.

@@ -1,0 +1,4 @@
+Part 1) Works as intended
+Part 2) Works as intended
+Part 3) Works as intended
+All parts function correctly.

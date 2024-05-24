@@ -1,0 +1,1382 @@
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 2 is hungry.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 0 is done eating.
+Philosopher 3 is hungry.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Philosopher 1 is starting to eat.
+Napping for 1.910102. seconds.
+Napping for 0.334681. seconds.
+Philosopher 0 is hungry.
+Philosopher 4 is done eating.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is hungry.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 2 is done eating.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Philosopher 4 is thinking.
+Napping for 0.484547. seconds.
+Philosopher 1 is done eating.
+Napping for 1.059480. seconds.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 2 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 3 is hungry.
+Philosopher 0 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 0 is done eating.
+Philosopher 1 is hungry.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 4 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 2 is done eating.
+Philosopher 0 is thinking.
+Philosopher 1 is hungry.
+Philosopher 2 is thinking.
+Philosopher 1 is starting to eat.
+Napping for 1.760237. seconds.
+Napping for 0.334681. seconds.
+Napping for 1.910102. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Philosopher 4 is starting to eat.
+Napping for 1.760237. seconds.
+Napping for 0.059480. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 2 is hungry.
+Philosopher 4 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 1 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is done eating.
+Philosopher 3 is hungry.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 1 is starting to eat.
+Philosopher 2 is thinking.
+Napping for 0.334681. seconds.
+Napping for 1.910102. seconds.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is done eating.
+Philosopher 3 is hungry.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is done eating.
+Philosopher 4 is hungry.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is done eating.
+Philosopher 1 is hungry.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 3 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 3 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 3 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is done eating.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 0 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 2 is done eating.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is done eating.
+Philosopher 3 is done eating.
+Philosopher 2 is hungry.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Philosopher 1 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Napping for 1.334681. seconds.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 0 is done eating.
+Philosopher 1 is hungry.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 3 is done eating.
+Philosopher 1 is hungry.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Philosopher 0 is thinking.
+Napping for 1.484547. seconds.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 2 is done eating.
+Philosopher 3 is hungry.
+Philosopher 0 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 2 is hungry.
+Philosopher 3 is done eating.
+Philosopher 1 is done eating.
+Philosopher 4 is hungry.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is starting to eat.
+Philosopher 1 is thinking.
+Napping for 0.760237. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Napping for 1.334681. seconds.
+Philosopher 3 is hungry.
+Philosopher 0 is done eating.
+Philosopher 2 is done eating.
+Philosopher 1 is hungry.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is done eating.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 2 is done eating.
+Philosopher 3 is hungry.
+Philosopher 0 is hungry.
+Philosopher 4 is done eating.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is thinking.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Napping for 1.334681. seconds.
+Philosopher 3 is hungry.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Philosopher 2 is done eating.
+Philosopher 1 is hungry.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is hungry.
+Philosopher 4 is done eating.
+Philosopher 2 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is done eating.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 2 is starting to eat.
+Philosopher 4 is starting to eat.
+Napping for 0.910102. seconds.
+Napping for 0.059480. seconds.
+Philosopher 3 is hungry.
+Philosopher 0 is hungry.
+Philosopher 2 is done eating.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 3 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 2 is done eating.
+Philosopher 1 is starting to eat.
+Philosopher 3 is hungry.
+Philosopher 2 is thinking.
+Napping for 0.334681. seconds.
+Napping for 1.910102. seconds.
+Philosopher 0 is hungry.
+Philosopher 4 is done eating.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is done eating.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 4 is starting to eat.
+Philosopher 0 is thinking.
+Napping for 0.059480. seconds.
+Napping for 1.760237. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 0 is starting to eat.
+Philosopher 1 is thinking.
+Napping for 0.760237. seconds.
+Napping for 1.334681. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 0 is done eating.
+Philosopher 1 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 4 is thinking.
+Philosopher 3 is starting to eat.
+Napping for 1.059480. seconds.
+Napping for 0.484547. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is done eating.
+Philosopher 4 is hungry.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is hungry.
+Philosopher 4 is done eating.
+Philosopher 2 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is done eating.
+Philosopher 3 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 0 is done eating.
+Philosopher 3 is hungry.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 4 is thinking.
+Philosopher 1 is done eating.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 1 is hungry.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 3 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Philosopher 2 is done eating.
+Napping for 1.059480. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Philosopher 2 is thinking.
+Napping for 0.484547. seconds.
+Napping for 1.910102. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 3 is done eating.
+Philosopher 0 is starting to eat.
+Philosopher 2 is hungry.
+Napping for 0.760237. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 0 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 1 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 0 is hungry.
+Philosopher 0 is starting to eat.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is hungry.
+Philosopher 3 is done eating.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is done eating.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Philosopher 3 is done eating.
+Napping for 1.334681. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 1 is hungry.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 1 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 1 is hungry.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 2 is done eating.
+Philosopher 3 is hungry.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 3 is hungry.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 1 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 3 is done eating.
+Philosopher 4 is hungry.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 3 is hungry.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 2 is done eating.
+Philosopher 0 is hungry.
+Philosopher 1 is starting to eat.
+Philosopher 2 is thinking.
+Napping for 0.334681. seconds.
+Napping for 1.910102. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 3 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 2 is hungry.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 0 is hungry.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 2 is starting to eat.
+Philosopher 3 is thinking.
+Napping for 0.910102. seconds.
+Napping for 1.484547. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is hungry.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 4 is done eating.
+Philosopher 0 is hungry.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 0 is hungry.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 1 is done eating.
+Philosopher 2 is hungry.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher 0 is starting to eat.
+Napping for 0.760237. seconds.
+Philosopher 1 is hungry.
+Philosopher 0 is done eating.
+Philosopher 4 is starting to eat.
+Napping for 0.059480. seconds.
+Philosopher 0 is thinking.
+Napping for 1.760237. seconds.
+Philosopher 4 is done eating.
+Philosopher 4 is thinking.
+Napping for 1.059480. seconds.
+Philosopher 0 is hungry.
+Philosopher 3 is starting to eat.
+Napping for 0.484547. seconds.
+Philosopher 4 is hungry.
+Philosopher 3 is done eating.
+Philosopher 3 is thinking.
+Napping for 1.484547. seconds.
+Philosopher 2 is starting to eat.
+Napping for 0.910102. seconds.
+Philosopher 3 is hungry.
+Philosopher 2 is done eating.
+Philosopher 1 is starting to eat.
+Napping for 0.334681. seconds.
+Philosopher 2 is thinking.
+Napping for 1.910102. seconds.
+Philosopher 1 is done eating.
+Philosopher 1 is thinking.
+Napping for 1.334681. seconds.
+Philosopher

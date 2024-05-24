@@ -1,0 +1,30 @@
+----------------------------
+Lab 6 - 100/100
+----------------------------
+
+Prelab: [30/30]
+    Problem A: The Philosopher [15/15]
+        [8/8] Set up the loop for the Philosophers correctly who transitions among the states of Thinking, Hungry, and Eating;
+        [3/3] Create the napping() function correctly using seed and thread-safe random number generators;
+        [4/4] Pass and reconstruct the parameter to the Philosopher() function properly.
+    Problem B: The main() function [15/15]
+        [8/8] Create the threads correctly by passing the right parameters to the pthread_create() function, including the parameter to the Philosopher() function;
+        [4/4] Call the rest of the pthread function(s) properly;
+        [3/3] Create a Makefile that can compile the programs into proper executable.
+
+Lab: [70/70]
+    Problem 1 [30/30]
+        [4/4] Set up and use an array of chopsticks as mutex correctly;
+        [4/4] Create the Philosopher loop structure correctly;
+        [12/12] The program runs correctly so no two philosophers are eating at the same time;
+        [4/4] Submit the problem1.out;
+        [3/3] Report your observation in answers.txt when running program;
+        [3/3] Discuss in answers.txt how could deadlocks possibly happen.
+    Problem 2 [20/20]
+        [12/12] Revise and experiment with the program until you do observer deadlocks in your test runs;
+        [4/4] Save the output when a deadlock occurs into the text file problem2.out;
+        [4/4] Discuss Problem 2.1 in your answers.txt.
+    Problem 3 [20/20]
+        [8/8] Implement the strategy that a philosopher with odd ID picks up the right chopstick first, otherwise picks up the left chopstick firs in problem3-1.c;
+        [8/8] Implement the strategy that a philosopher picks up the lowest numbered chopstick first in problem3-2.c;
+        [4/4] Discuss Problem 3.1 in your answers.txt.

@@ -1,0 +1,43 @@
+// Gradle build file
+// CSCI 205 -Software Engineering and Design
+// Bucknell University
+// Author -B. King
+plugins{
+    id 'application'
+    id 'java'
+    id 'idea'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+group 'org.Team9'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+run{
+    standardInput = System.in
+}
+// Needs to be either 11.0.2 (LTS) or 16
+javafx {
+    version = "17.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+
+dependencies {
+    testImplementation'org.junit.jupiter:junit-jupiter:5.8.1'
+    testRuntimeOnly'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation fileTree(dir: 'libs', includes: ['*.jar'])
+
+}
+
+application {
+    //mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") :
+    mainClassName = project.hasProperty("mainClass") ? project.getProperty("mainClass") : "main.KeyboardMain"
+
+}

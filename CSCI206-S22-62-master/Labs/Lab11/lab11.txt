@@ -1,0 +1,213 @@
+(1.1) What is “stack smashing?”
+Stack smashing is causing the stack to overflow, resulting in possible vulnerabilities in a system.
+(1.2) What is it that makes stack smashing possible?
+Writing data into a piece of memory that is smaller than the data required to store that data, resulting in later memory addresses being edited.
+(1.3) Examine the program example3.c that you copied in setting up the lab. (This example3.c is similar, but not identical to the one listed in the paper.) Do you think the local variable ret in the function my_function() means the same thing (ret) as you see in the Stack Smashing paper that is displayed on the stack? Why or why not?
+My assumption is that theya re functionally same thing, given that they appear to serve relatiely the same function.
+(1.4) Compile the file (on riscv) example3.c with the debug option to an executable called example3. You will need to suppress the "-Wfatal-errors" compiling option so you can compile the program successfully. The local variable buffer2 is defined but not used. We need this variable in its spot even though we don't use it. Open this file in gdb as indicated in the “Buffer Overflows” section of the paper and use the gdb command disassemble to disassemble the main() function. If you open the example3.c file in your favorite text editor (not on riscv!), you will see that its contents are very similar to the corresponding listing in the paper. Explain why the disassembled assembly code looks so different from what you see in the paper.
+The difference between the two disassembled assembly code can likely be explained by the slightly different initial values, as well as the drasticall different print statements. The assembly for the more complex print statement in our example3.c means that the corresponding assembly code is different. Additionally, even though there is no functionality within the nop() function, it likely also contributes to a number of the differences as it is called within our version.
+(1.5) Execute the program (on riscv) example3. The result is not what you expected. Try to speculate what might have caused the printf statement to print values that are different than you'd expect. We will study the reasons in detail in the lab exercises.
+This is likely because we overrwote the expected data within the stack, resulting in other data being changed without our awareness. This likely is a result of the data where the printf value was stored being edited through stack smashing.
+(1.6) To smash the stack, you need to know two key values, where is the return address (register ra) is saved, and how many bytes (instructions) to skip after the function is returned. In our case, we would like the program to skip the instruction x = 4; the instruction immediately following the function call to my_function() in the main() function. In order to explain the two key values in the function my_ function(), you first need to understand what the lines ret = (int*)(buffer1 + 24); and (*ret) += 10; do. For the moment, just explain what the code does from a C syntax point of view. You will figure out WHY they’d “smash” the stack in the lab exercises.
+This code, as the paper explains, meant to add 12 to buffer1[]'s address which makes this new address where the return address is stored. The second portion is because we want to skip pass the assignment to the printf call.
+
+(gdb) disassemble main
+Dump of assembler code for function main:
+   0x00000000000104e4 <+0>: addi    sp,sp,-32
+   0x00000000000104e6 <+2>: sd  ra,24(sp)
+   0x00000000000104e8 <+4>: sd  s0,16(sp)
+   0x00000000000104ea <+6>: addi    s0,sp,32
+   0x00000000000104ec <+8>: li  a5,5
+   0x00000000000104fc <+24>:    li  a5,4
+   0x00000000000104ee <+10>:    sw  a5,-20(s0)
+   0x00000000000104f2 <+14>:    li  a2,3
+   0x00000000000104f4 <+16>:    li  a1,7
+   0x00000000000104f6 <+18>:    li  a0,1Examine the disassembled code for the main() function. Identify which assembly instruction calls the function my_function() and what is the memory address of this instruction. Also identify which assembly instruction sets the value of x to be 4 and the printing statement afterwards. Record their addresses. You can skip the leading zeros in the addresses
+   0x00000000000104f8 <+20>:    jal ra,0x1049c <my_function>
+   0x00000000000104fc <+24>:    li  a5,4
+   0x00000000000104fe <+26>:    sw  a5,-20(s0)
+   0x0000000000010502 <+30>:    lw  a4,-20(s0)
+   0x0000000000010506 <+34>:    lw  a5,-20(s0)
+   0x000000000001050a <+38>:    mv  a2,a4
+   0x000000000001050c <+40>:    mv  a1,a5
+   0x000000000001050e <+42>:    lui a5,0x10
+   0x0000000000010510 <+44>:    addi    a0,a5,1408 # 0x10580
+   0x0000000000010514 <+48>:    jal ra,0x103d0 <printf@plt>
+   0x0000000000010518 <+52>:    lw  a5,-20(s0)
+   0x000000000001051c <+56>:    mv  a0,a5
+   0x000000000001051e <+58>:    ld  ra,24(sp)
+   0x0000000000010520 <+60>:    ld  s0,16(sp)
+   0x0000000000010522 <+62>:    addi    sp,sp,32
+   0x0000000000010524 <+64>:    ret
+End of assembler dump.
+(gdb) disassemble my_function
+Dump of assembler code for function my_function:
+   0x000000000001049c <+0>:     addi    sp,sp,-64         #Allocate
+   0x000000000001049e <+2>:     sd  ra,56(sp)             #Store RA at 56(sp)
+   0x00000000000104a0 <+4>:     sd  s0,48(sp)             #Store s0 at 48(sp)
+   0x00000000000104a2 <+6>:     addi    s0,sp,64          #Storing bottom of the stack into s0
+   0x00000000000104a4 <+8>:     mv  a5,a0                 #Move A into a5
+   0x00000000000104a6 <+10>:    mv  a3,a1                 #Move B into a3
+   0x00000000000104a8 <+12>:    mv  a4,a2                 #Move C into a4
+   0x00000000000104aa <+14>:    sw  a5,-52(s0)            #Store A into -52(s0) or 12(sp)
+   0x00000000000104ae <+18>:    mv  a5,a3                 #Move the value of B into a5
+   0x00000000000104b0 <+20>:    sw  a5,-56(s0)            #Store the value of B into -56(s0) or 8(sp)
+   0x00000000000104b4 <+24>:    mv  a5,a4                 #Move the value of C into a5
+   0x00000000000104b6 <+26>:    sw  a5,-60(s0)            #Store the value of C into -60(s0) or 4(sp)
+   0x00000000000104ba <+30>:    jal ra,0x1048e <nop>      #Jump to NOP
+   0x00000000000104be <+34>:    addi    a5,s0,-32         #A5 is sp + 32
+   0x00000000000104c2 <+38>:    addi    a5,a5,24          #A5 is sp + 56
+   0x00000000000104c4 <+40>:    sd  a5,-24(s0)            #Stores sp + 56 to 40(sp)
+   0x00000000000104c8 <+44>:    ld  a5,-24(s0)            #Loads 40(sp) back to a5
+   0x00000000000104cc <+48>:    lw  a5,0(a5)              #Loads 0(a5) into a5
+   0x00000000000104ce <+50>:    addiw   a5,a5,10          #Adds 10 to a5 --> 10(a5)
+   0x00000000000104d0 <+52>:    sext.w  a4,a5
+   0x00000000000104d4 <+56>:    ld  a5,-24(s0)
+   0x00000000000104d8 <+60>:    sw  a4,0(a5)
+   0x00000000000104da <+62>:    nop
+   0x00000000000104dc <+64>:    ld  ra,56(sp)
+   0x00000000000104de <+66>:    ld  s0,48(sp)
+   0x00000000000104e0 <+68>:    addi    sp,sp,64
+   0x00000000000104e2 <+70>:    ret
+End of assembler dump
+
+
+(2.1) Addresses of sp, s0/sfp, ra, original s0, a, b, c, buffer1, buffer2, and ret.
+  sp: 0(sp)
+  s0/sfp: 48(sp)
+  ra: 56(sp)
+  original s0: 48(sp)
+  a: 12(sp)
+  b: 8(sp)
+  c: 4(sp)
+  buffer1:  32(sp)
+  buffer2:  40(sp)
+  ret:  -10(sp)
+  0(sp)                                                                 64(sp)
+  c     b       a                        buffer1         buffer2     s0  ra
+  [    ][    ][    ][                 ][           ][             ][    ][  ]
+  f1a0  f1a4   f1a8                        f1c0         f1c8        f1d8    f1dc
+
+2.3)Examine the disassembled code for the main() function. Identify which assembly instruction calls the function my_function() and what is the memory address of this instruction. Also identify which assembly instruction sets the value of x to be 4 and the printing statement afterwards. Record their addresses. You can skip the leading zeros in the addresses
+Jump to my_function(104f8)
+0x00000000000104f8 <+20>:    jal ra,0x1049c <my_function>
+Set value of x to 4 (104fc)
+0x00000000000104ec <+8>: li  a5,5
+0x00000000000104fc <+24>:    li  a5,4
+Print Value (10514)
+0x000000000001050e <+42>:    lui a5,0x1u
+0x0000000000010510 <+44>:    addi    a0,a5,1408 # 0x10580
+0x0000000000010514 <+48>:    jal ra,0x103d0 <printf@plt>
+
+2.4) Now explain why the two values 24 (at line 14) and 10 (at line 15) are used in the function my_function() of the C program and what are the effects in terms of program execution.
+The 24 is utilized to set the value of ret to the end of buffer1
+The 10 is used to make the address of ret at 10 higher than what it was initialized as. This points it out of the confines of the stack.
+
+
+
+
+(3.1) Run over1 and enter an input string with more than 10 characters and note what happens. Run over2, enter the same input string you used before, and note any difference in behavior in comparison with the first program. Explain how the buffer overflow risk was eliminated in over2.c.
+The program over1 prints the complete input string, regardless of whether or not it is over 10 characters. In over2, regardless of how long the string is, it will only print the initial characters, by only taking the first 10 characters with fgets.
+(3.2) Now, run over3 and enter your same input string. Read the source code in over3.c and explain what causes the risk of buffer overflow in this program.
+Over3 does not take into account the length of the string at all. It just does a sscanf statement to check what the user inputs. As a result, it is possible for something that is not an account number to be read and utilized in the function.
+(3.3) Consider the flaws you identified in over1.c and over3.c, then generalize from your observations to write a rule of thumb that allows anyone to identify when a system call or library function call will give a program the risk of buffer overflows.
+Unless there is specific guards against an input larger than the one expected, there is a possiblity for buffer overflows.
+(3.4) Comparing over3.c and over4.c, you learn a lesson on how to handle user input to avoid the risk of buffer overflows. Try to state this lesson as clearly as possible.
+We learn that explicitly stating the length of something when expecting an input is generally more safe when dealing with user input, and the guard condition can often be incredibly simple, even to the extent of being 1 character which modifies an existing function.
+(3.5) Construct a proof-of-concept program called over5.c to show how a certain function can introduce the risk of buffer overflow. The function you choose must be different from those that appeared earlier in this problem. The list that follows offers a few candidates for you to consider: strcat, strcpy, sprintf. You can try it on different machines with different compilers, e.g., cc on riscv, or cc on the lab Linux machines. You might get different results. Try to explain what you see.
+I do not get different results from running the program in riscv vs running it in the general system.
+
+(4.1) Reading the source code and decode-run.txt, record the addresses of main, d, i, j, k, buf[0], and buf[1], then determine in which segment of memory each of these five addresses appears.
+DATA VARIABLES
+&main = 0x10604
+STACK VARIABLES
+&d = 0x3fffb67290
+&i = 0x3fffb6728c
+&j = 0x3fffb67288
+&k = 0x3fffb672ac
+&buf[0] = 0x3fffb672b0
+&buf[1] = 0x3fffb672b1
+
+
+(4.2) Run gdb on the program decode and use the disassemble command in gdb to disassemble the main() function, save the result in decode.s. In a text editor, open the file decode.s. Look at the code in main to identify and record the addresses and the instructions at which set up the parameters to pass in the invocation to function test. The function prototype of this C function and its call from the main function are shown below:
+ 0x000000000001060c <+8>:	li	a5,12
+ 0x000000000001060e <+10>:	li	a4,1039
+ 0x0000000000010612 <+14>:	li	a3,4
+ 0x0000000000010614 <+16>:	li	a2,3
+ 0x0000000000010616 <+18>:	li	a1,2
+ 0x0000000000010618 <+20>:	li	a0,1
+
+(4.3)Write down in your lab11.txt the following. Note that these values may differ from what you see in Exercise 2. But their relative locations are similar. To print the address of a variable, you'd use print command with the hex option, e.g., p/x &i prints the memory location of the variable i.
+    addresses of d, i, j, buf[0], buf[1];
+        I  0x3ffffff1cc
+        J  0x3ffffff1c8
+        D  0x3ffffff1d0
+        buf[0] 0x3ffffff1f0
+        buf[1] 0x3ffffff1f1
+    the memory address which is in the stack area where the return address (ra) is stored;
+      0x3ffffff208
+    the value of the return address (ra);
+      0x1061e
+    the value of the stack frame pointer (sfp, i.e., s0 or fp).
+      0x3ffffff200
+    the value of stack pointer sp.
+      0x3ffffff210
+    the size of the stack frame (the difference between sp and fp) [You can disassemble function test to verify if this value is correct.]
+      80
+
+(4.4) Using the information you gathered so far, draw the stack frame for function test. You must show the address of each component of the stack frame for test, including i, j, buf[0] - buf[11], k, as well as the values for registers sp, sfp (s0), and ra. There might be some gaps in address ranges. This is fine. Arrange the display in the order of memory address from high to low.
+
+high memory (stack bottom)             value
+  &j        0x3ffffff1c8                0xc
+  &i        0x3ffffff1cc                0x40f
+  &k        0x3ffffff1ec                0x20
+
+  buf[0]    0x3ffffff1f0              0x0
+  buf[1]    0x3ffffff1f1              0x0
+  buf[2]    0x3ffffff1f2              0x0
+  buf[3]    0x3ffffff1f3              0x0
+  buf[4]    0x3ffffff1f4              0x0
+  buf[5]    0x3ffffff1f5              0x0
+  buf[6]    0x3ffffff1f6              0x0
+  buf[7]    0x3ffffff1f7              0x0
+  buf[8]    0x3ffffff1f8              0x0
+  buf[9]    0x3ffffff1f9              0xf8
+  buf[10]   0x3ffffff1fa              0xbb0x1061e
+  buf[11]   0x3ffffff1fb              0xaa
+
+
+  &fp       0x3ffffff200              0x3ffffff210
+  &ra       0x3ffffff208              0x1061e
+
+  &sp       0x3ffffff210              0x3ffffff1c0
+
+(4.5) You have learned about programs being structured into these four regions or “compartments,” the open question is how the processor deals with their boundaries. Would the processor possibly execute code that is not in the text segment? Would the processor be able to manipulate data stored in the text segment?
+    Theoretically it could be possible for the processor to manipulate data stored in the text segment through some form of stack smashing, but I am unsure of whether or not it could execute code not in the text segment. It probably could be possible if there was a large enough memory manipulation to the extent where the processor boundries were tricked.
+
+(4.6)Describe what evidence you find to confirm that buf is now in the data segment. Please do not overwrite your previously saved decode-run.txt file!
+    The evidence that buf is now in the data segment is in the fact that the location of the buf as represented in static-decode-run.txt shows distinctly different locations. The locations are much lower in memory, indicating they are in the DATA segment.
+    &main = 0x10604
+    &d = 0x3fff839280
+    &i = 0x3fff83927c
+    &j = 0x3fff839278
+    &k = 0x3fff83929c
+    &buf[0] = 0x12048
+    &buf[1] = 0x12049
+    &buf[2] = 0x1204a
+    &buf[3] = 0x1204b
+    &buf[4] = 0x1204c
+    &buf[5] = 0x1204d
+    &buf[6] = 0x1204e
+    &buf[7] = 0x1204f
+    &buf[8] = 0x12050
+    &buf[9] = 0x12051
+    &buf[10] = 0x12052
+    &buf[11] = 0x12053
+
+
+
+(5.1)Analyze the output of this program. In you lab11.txt, Explain in your own words what makes concat.c an insecure program.
+    There are two main vulnerabilities that rats presents, the first being there is a buffer that the program utilizes that has a fixed size. Because it is an array that is allocated onto the stack, there is the possibility given a malicious input for there to be an occurance of stack smashing. The other vulnerability that is presented by rats is that strcpy is used in the program. Rats mentions to make sure that there should be a check to make sure the input of the source is the expected size to stop buffer overflow from strcpy.
+(5.2) Now, also in your lab11.txt, try to generalize from the experiences you’ve had in this lab to explain what type of programming “mistake” makes a program vulnerable to stack smashing attacks.
+    The type of mistakes that we have seen in the lab are the mistakes where code is being written expecting an input, but does not have any protections against unexpected inputs. Not having guard conditions is a mistake that can lead to stack smashing attacks. Regardless of the situation, more specificity will generally be significantly safer.
+(5.3) Adapt concat.c to eliminate, or at least, minimize the risks of stack smashing. Once you have tried your best, make sure to run it through rats again to verify that you managed to improve it.

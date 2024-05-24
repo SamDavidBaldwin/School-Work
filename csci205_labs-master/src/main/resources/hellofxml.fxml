@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab11.ex1.HelloFXMLController">
+   <children>
+      <FlowPane alignment="CENTER" style="-fx-border-color: BLACK;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Text fx:id="textName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Times New Roman" size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+               </effect>
+            </Text>
+         </children>
+      </FlowPane>
+      <HBox alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Name: " />
+            <TextField fx:id="textFieldName" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Slider fx:id="sliderRed" layoutX="67.0" layoutY="105.0" majorTickUnit="0.25" max="1.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="0.5">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Slider>
+      <Slider fx:id="sliderGreen" layoutX="5.0" layoutY="105.0" majorTickUnit="0.25" max="1.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="0.5">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Slider>
+      <Slider fx:id="sliderBlue" layoutX="113.0" layoutY="105.0" majorTickUnit="0.25" max="1.0" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" value="0.5">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Slider>
+      <Label layoutX="83.0" layoutY="252.0" text="Green" textFill="SPRINGGREEN" />
+      <Label layoutX="27.0" layoutY="252.0" text="Red" textFill="RED" />
+      <Label layoutX="134.0" layoutY="252.0" text="Blue" textFill="BLUE" />
+      <Slider fx:id="sliderSize" layoutX="343.0" layoutY="325.0" showTickLabels="true" showTickMarks="true" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="100.0" />
+      <Label layoutX="402.0" layoutY="369.0" text="Size" textFill="BLUE" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="150.0" />
+      <Label fx:id="lblStatusBar" layoutX="210.0" layoutY="378.0" style="-fx-background-color: BLACK;" text="Label" textFill="YELLOW" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+   </children>
+   <effect>
+      <DropShadow height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" spread="1.0" width="10.0" />
+   </effect>
+</AnchorPane>

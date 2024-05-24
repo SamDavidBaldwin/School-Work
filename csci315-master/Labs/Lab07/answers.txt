@@ -1,0 +1,8 @@
+1) The process of adding and removing of the nodes within the doubly linked list, because the addition and removal of nodes is O(1) is suitable for the use in a custom memory allocator. This O(1) nature means that there will not be an overhead in removing/adding nodes.
+2)Another data structure that might work well would be any kind of matrix, which could theoretically be able to hold large amounts of data and have O(1) lookup.
+3)External fragmentation occurs in cases where there is enough data that is unused to fill a call, but that amount of data is not in a specific blocks constraints, resulting in the data being spread over an area.
+4)Internal fragmentation occurs when the amount of memory within a block that has been allocated is larger than the amount of data that is being stored, resulting in free fragments.
+5)First fit allocation policy is when the first free block of data is taken to store the data, which has a lower lookup and storage time, but a higher amount of space wasted than other methods.
+6)Best Fit allocation policy when the smallest available block of data is taken to store the data, meaning that there is significantly less amount of wasted space, but there is a longer lookup time to actually store the data.
+7) The worst-fit allocation policy is when the largest available block of data is taken to store the data. This results in there being a large amount of unused block space, but does result in significantly less external fragmentation.
+

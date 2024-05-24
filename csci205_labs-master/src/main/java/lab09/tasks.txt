@@ -1,0 +1,59 @@
+- Write the initial Board class
+Status: Complete
+Time Estimate: 15 minutes
+Actual time spent: 10 minutes
+Assigned to: Sam
+
+- Write the Peg class
+Status: Complete
+Time Estimate: 5 minutes
+Actual time spent: 5 minutes
+Assigned to: Sam
+
+- Write the line class framework
+Status: Complete
+Time Estimate: 2 hours
+Actual time spent: 2.5 hours
+Assigned to: Sam
+
+- Write the GameState enum
+Status: Complete
+Time Estimate: 2 minutes
+Actual time spent: 2 minutes
+Assigned to: Sam
+
+- Write the Check class framework
+Status: Complete
+Time Estimate: 1 hour
+Actual time spent: 45 minutes
+Assigned to: Sam
+
+- Write the Mastermind class framework
+Status: Complete
+Time Estimate: 1 hour
+Actual time spent: 1.5 hours
+Assigned to: Sam
+
+- Write Victory/Failure conditions
+Status: Complete
+Time Estimate: 1 hour
+Actual time spent: 30 minutes
+Assigned to: Sam
+
+- Write random code Generation
+Status: Complete
+Time Estimate: 1 hours
+Actual Time Spent: 45 Minutes
+Assigned to: Sam
+
+- Alter Win and Loss cases
+Status: Complete
+Time Estimate: 10 minutes
+Actual Time Spent: 5 minutes
+Assigned to: Sam
+
+- Write Protection against wrong inputs
+Status: Complete
+Time Estimate: 30 minutes
+Actual Time Spent: 45 minutes
+Assigned to: Sam

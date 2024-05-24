@@ -1,0 +1,16 @@
+								2^14	2^16	2^18
+Elapsed Time (Normal Selection)	0.362	5.734	91.716
+User Time (Normal Selection)	0.361	5.731	91.71
+System Time (Normal Selection)	0.000	0.001	0.002
+
+Elapsed Time (16 Threads)		0.006	0.051	0.443
+User Time (16 Threads)			0.029	0.531	5.898
+System Time (16 Threads)		0.004	0.004	0.006
+
+Elapsed Time (64 Threads)		0.005	0.017	0.138
+User Time  (64 Threads)			0.01	0.124	1.607
+System Time (64 Threads)		0.004	0.005	0.009
+
+
+This data demonstrates how vastly better utilizing threads and splitting up the workload is, especially with larger loads. We can see that the normal selection sort is capable of handling the 2^14 sized array, but as the arraysize increases, the time also drastically increases, as from 2^14 to 2^18 the time increases by a factor of nearly 300. This problem is drastically mitigated with the implementation of threads, as with a drastically faster time for smaller arrays, even though it increases alongside the size of the array, the times for the larger arrays stay smaller. We can see this effect even more drastically with the 16 to 64 thread comparison, as the time to sort with 64 threads is significantly smaller than the already small 16 thread sorting. 
+Ultimately, this can be attributed to the mechanism of dividing and conquering, by utlizing threads as a resource in order to quickly, and efficiently handle work allows for even an enormously large task to be completed relatively quickly. This solution does have it's limitations in computational resources, but it offers a relatively simplistic way to speed up difficult tasks. 

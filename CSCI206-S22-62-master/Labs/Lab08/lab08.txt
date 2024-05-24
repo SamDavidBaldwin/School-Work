@@ -1,0 +1,6 @@
+Prelab part 1):
+    Given that the course_t structure actually initially gives a size of the character arrays that it is allocating for, it is larger
+    as it already allocates that space rather than dynamically doing it. This may result in a large amount of unused space however,
+    and therefore isn't always as space efficient. This is responsible for the majority of the size disparity as the portions that the
+    two have in common are equivalent.
+

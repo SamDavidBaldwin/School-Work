@@ -1,0 +1,54 @@
+Samuel Baldwin
+CSCI206
+Lab01
+Jan 18, 2022
+
+Figure out how to do the following in vim and in emacs. Write your answers in your lab01.txt file.
+VIM:
+i.save the current content of the file and quit
+    :wq
+ii.delete an entire line of text
+    esc - dd
+iii.display line numbers
+    :set number
+
+EMACS:
+i.save the current content of the file and quit
+    C-x C-c
+ii.delete an entire line of text
+    C-a C-k
+iii.display line numbers
+    M-x line-number-mode
+
+1.One line mkdir command, making parent directories if needed:
+    mkdir -p ~location
+    In the case of this lab: mkdir -p Labs/Lab01
+2.One sentence description of each of the following commands:
+ls - Lists files within the present working directory, -a allows ls to show hidden files.
+pwd - Returns the present working directory, or the location that the user is currently working in by giving the path from the root directory.
+cp - Copy files or groups of files from a [source] to a [destination]
+mv - Moves a file or group of files from a [source] to a [destination]
+rm - Removes a file or a directory.
+mkdir - Creates a file or a directory
+rmdir - Removes empty files or directories
+touch - Used to create files or update the access and modification times of a file.
+cat - Concatenates files, reads files and prints them to the current output.
+more - Function that allows files to be read one screenful at a time.
+less - Similar to more, but allows backwards movement through a file.
+head - Outputs the first part of a file - default is the first 10 lines of a file.
+tail - Opposite of head, prints the last 10 lines of a file
+3.The command to start emacs without a GUI
+    emacs ~/file -nw
+4.The command to show line numbers in vim
+    :set number
+5.The command to show line numbers in emacs
+    M-x line-number-mode -> Alternatively Options->Show/Hide->Line Numbers
+6.The command to save the content of the file in vim
+    :w to save :wq to save and quit
+7.The command to save the content of file in emacs
+    C-x
+8.The command to delete the current line in vim
+    esc - dd
+9.The command to delete the current line in emacs
+    C-a C-k
+10.After careful consideration, I will use vim in csci206 as my text editor.

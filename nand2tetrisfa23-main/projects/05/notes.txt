@@ -1,0 +1,11 @@
+This section is all about taking the parts we have made and plugging them together to get a "full computer:"
+
+Fetch - Execute Cycle 
+A given instruction specifies one action to be taken
+Program counter tracks a value of which instruction should be executed 
+
+There are specific instruction registers that are utilized to store instructions while they are executed
+
+The CPU takes 3 inputs a data value, an instruction and a reset bit 
+the CPU outputs a data value, a bit to determine whether or not to write to memory and an address to the Data memory
+The CPU outputs the address of the next instruction to instruction memory

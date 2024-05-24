@@ -1,0 +1,11 @@
+open(2) - When given a pasthname for a file, open returns an integer that can be used in other calls, in order to refer to the file. If the call is successful, the file descriptor returned will be the lowest-numbered file descriptor not currently open for the process. A call to open will create a new open file description which is an entry into the system wide table of open files, which will also record the file offset and status flags. A call to open can also include flags, like
+O_RDONLY, O_WRONLY, and O_RDWR, which indicate the file read-only, write-only, and read-rwrite flags.
+
+creat(2)- Similar to open(), but instead of taking an existing file as an argument, takes a pathname and a mode to create a file.
+
+read(2)- Takes a file descriptor, a buffer and a size_t, and reads up to the size_t bytes from the provided file descriptor to the buffer. If a file supports seeking, the process will start at the file offset. If the size_t is greater than SSIZE_MAX, the result is unspecified. If the process is successful, the number of bytes that are read is returned by the function, and the file position is advanced by the number returned.
+If the number of bytes requested is larger than the number of bytes is not available to be read, it does not return an error.
+
+write(2)- Takes a file descriptor, a buffer, and a size_t, and writes up to the size_t bytes from the provided buffer to the file descriptor that is given. If the size of the recieving file is too small, the number of bytes written may be less thean the provided parameter. If the process is successful, the number of written bytes is returned, and on an error -1 is returned.
+
+close(2) - This function takes the integer that is used to represent a file, from creat/open, and closes that descriptor. This makes it so the integer that was representing a file no longer refers to any file and can be reused when open() is called again. On success, zero is returned, and -1 is returned with an error. The three main errors are EBADF, where the parameter is not a valid file descriptor, EINTR, where the close call was interrupted,, or EIO where an IO error occured.

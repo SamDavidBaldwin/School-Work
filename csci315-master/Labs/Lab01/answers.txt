@@ -1,0 +1,8 @@
+b) After the spawning of the new process, the value of num exists in both the process of the child and the parent meaning the same variable exists in two different memory instances.
+
+2
+a) The variables i and x are stored in the data segment, given they are global and not instantiated. The other variables, (pid, j, y) are stored in the stack given they are local variables.
+
+b)Using this program we can see that initially, the data and stack segments of a parent are copied over to the child procees, but after they are copied, they are no longer linked. If one process closes the file, the other process can still read from it. This indicates that the two processes have unique memory for the data and stack segments.
+
+d)If one process closes the file, it does appear to still function on the other process and can still read the file. Given the output of the program, we can determine that the two do have some interaction, given that if the child reads from the inherited file, the parent will pick up reading from where the child left off.

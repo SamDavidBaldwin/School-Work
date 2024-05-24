@@ -1,0 +1,34 @@
+1.1) The only type of fragmentation that can occur in our custom allocator can be external fragmentation because there is the possiblity for when the allocatore stores data, for there to be some excess space within the space where the data is being stored. There cannot be internal fragmentation with our custom allocator because the allocator checks for the available space to store the value being stored and does not operate if there is not enough space to store.
+1.2) We can measure the average allocation and deallocation times, by doing a set number of one of the operations, tracking the time that it takes to do that operation and then calculate the time per specific operation.
+1.3)
+double average_frag(){
+    void *iter = free_list->first;
+    frag_size = 0;
+    num_nodes = 0;
+
+    while(iter != NULL){
+        frag_size += iter->size;
+        num_nodes++;
+        }
+    return frag_size/num_nodes;
+}
+
+
+2.1) The one existing issue with the program as it exists, is that it can lead to the issue of reduced fragmentation due to the fact that inputs are deallocated just as they are allocated leading to the case where there is no residual data. This likely doesn't occur in the cases of real world computation. realistically a more accessible system would be one where there are a series of allocations and then a series of deallocations after the allocations are completed. This would better
+represent a process, as it would represent the execution and then cleanup of a process.
+The pseudocode for this would be:
+
+int r = 0;
+void *p[request];
+while (r < request){
+    p[r] = allocate(algorithm, random number between 100 and 1000);
+    increment r;
+}
+while(r < request){
+    p[r] = deallocate(p[r]);
+    increment r;
+}
+
+
+
+3.1) Looking at the data , it appears that the lowest fragmentation estimate with the highest interval is the 1, or first fit algorithm. This makes sense given how the algorithm is written, to favor the first available space resultin in less likely external fragmentation at the end of the space. The values that I got for each of the algorithms were incredibly close, so there isn't a drastic difference but rather a slight improvement from first fit.

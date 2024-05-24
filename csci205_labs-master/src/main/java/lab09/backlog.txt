@@ -1,0 +1,18 @@
+User Stories
+    1. The user plays through the game and gets the code correct at the end
+        -Write a victory condition
+    2. The user plays through the game and fails to get the code correct at the end
+        -Write a failure condition
+    3. The user plays through half the game, and wants to exit
+        -Write an exit condition
+    4. The user has varied case in typing in answers or puts spaces at the end of the input
+        -Code "forgiveness"
+    5. The user completes the game and wants to play another game.
+        -Write a reset option
+    6. The user wants to adjust the number of guesses allotted
+        -Alter start
+    7. The game requires a 2 dimensional array that is a variable amount by 4 cells
+        - Board Class
+    8.
+
+

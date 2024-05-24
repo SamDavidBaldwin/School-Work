@@ -1,0 +1,17 @@
+This section largely talks about clock cycles and how the computer utilizes them for sequential instructions. Interestingly they discuss how within the period of a clock cycle there is some fluctuation and the value we associate with a cycle is the value at the end of that cycle.
+
+Out of time t is dependent on the input of time (t-1)
+
+Next they discuss the elements that allow for the functionality of integer time units. 
+    Remember one bit of information from time t-1 to time t 
+
+The gate that does this is called a Flip-Flop, as it "flips" between the two states
+
+The triangle within a Clocked Data Flip Flop indicates that it is a sequential chip
+To have a chip remember an ouput forever, when ti is loaded, utilize a mux.
+
+A register is just taking a singular bit value that is remembered, and shoving them together with some width w. 
+The registars state is the value stored in a register at a given time
+
+
+Ram --> Random access memory

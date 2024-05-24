@@ -1,0 +1,2 @@
+1.) It does not appear that the initial execution order is the same as which they are created. The first character printed changes for each time that the program is run.
+2.) There does not appear to be a set order in which the threads execute, it is relatively random which is thread prints. Sometimes it is 1,2,3 and others it is 2,1,3 and so on for each of the possible orders.

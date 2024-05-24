@@ -1,0 +1,8 @@
+3.1)
+    Using touch only changes the last status change of a file.
+3.2)
+    Changing the time of modification can be done by using touch -m
+3.3)
+    Changing the time of modification can be done by using touch -a
+3.4)
+    Knowing the maximum file name length is helpful in any scenario in which you are reading the file name into a buffer of sime kind to avoid writing over important data. If you know the maximum file name size you can account for this and define the buffer accordingly.

@@ -1,0 +1,21 @@
+This unit focuses around adding branching behavior
+It also focuses on extending languages beyond their vanilla capabilities
+    Like writing algorithms and calling them as functions\
+
+The first ting discussed is goto which is the conditional branching for the language 
+    To use goto, you need to push the condition to the stack before the if-goto command
+    labels are used to distinghuish where to goto 
+
+3 commands: 
+    goto label, if goto label, label label
+    only if-goto changes the stack
+
+
+Vm language has primitive or fixed operations as well as abstract or extensible operations  
+Like 90% of what they are saying is "you don't need to worry about this rn, we'll work on it later" 
+
+
+Need to push a value onto the stack to return
+
+The structure of the function call and return is a stack made up of smaller blocks 
+    one block per function that hold the necessary information for that function

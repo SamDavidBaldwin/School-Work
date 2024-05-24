@@ -1,0 +1,48 @@
+Exercise 2)
+ra
+    The ra is the return address that can be utilized when something is going to be returned by a function. This register will hold a value and provide it to the location from which the function
+    was called. This register can be used in basically every function that returns a value.
+
+sp
+    The sp is the stack pointer register that is used to point to the location in memory where the stack is stored. The stack is generally utilized in storing and restoring the return values of
+    functions in the case where a register may need to be overwritten. This can happen in non leaf functions, functions that call other functions. In order for the system to maintain the proper
+    system of return values, there needs to be some existing record of those return values in the order in which they will need to be accessed.
+
+Registers to hold parameters and return values for functions/procedures
+    These are the argument registers x10-x17 also known as the a0-a7 registers. The most commonly used of these registers is a7 which is often utilized in tandem with ecall to execute syetem calls.
+    These registers are utilied in functions with static inputs, and have a wide array of use cases, basically acting as the arguments to any function. Additionally, these registers can act as
+    holding points for the return values of functions, if there need to be multiple output data points.
+
+Registers to hold temporary values that are not preserved across different function calls
+    These are caller saved registers, and are generally the ra, x5-x7, and x28-x31 registers. These registers do not need to be saved as the only use for these values is within the specific
+    function call they are defined in. The cases in which you would most likely utilize these registers are within functions that do simple calculations, and return the value of that operation.
+    The registers dont need to hold onto the information once the value has been calculated, and once the value has been returned from the function, they can be reassigned to other values without
+    compromising the function.
+
+Registers to hold values that are supposed to be preserved across different function calls.
+    These are callee saved registers, and are generally the sp, x8-x9, and x18-x27 registers. The sp register needs to be preserved, because otherwise there would be no possiblity of consecutively
+    calling and storing functions. The other registers are designated as saved registers. The cases in which you would most liely utilize these registers are more complex functions that require
+    "memory" of previous steps in order to function. An example might e a function that is called recursively in which values would need to be carried through consecutive function calls. Additionally
+    something that has a cascading model, like calculating Euclid numbers would need to utilize saved registers to effectively function as it would need the output, or the avlues to be saved
+    somewhere in order to function.
+
+
+Exercise 3)
+
+#Read a string from the keyboard
+#t0 hold starting address of the string
+#Maximum length of the string is 32
+
+#Readstring syscall is 8
+    #a0 = address of input buffer
+    #a1 = maximum number of characters to read
+.text
+    li a1, 32
+    la a0, t0
+    li a7, 8 # ReadString
+    ecall
+
+    li a7, 10 #exit
+    ecall
+
+
